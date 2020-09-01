@@ -39,4 +39,9 @@
 
 > SOLID
 
-- [Repository, service e patterns](<https://www.notion.so/Repository-service-e-patterns-82419cceb11c4c4fbbc055ade7fb1ac5>)
+- [Repository, service e patterns](https://www.notion.so/Repository-service-e-patterns-82419cceb11c4c4fbbc055ade7fb1ac5)
+
+- `yarn typeorm migration:create -n CreateAppointments` criação de arquivo de migração
+- `yarn typeorm migration:run` executa migração
+  - só pode modificar uma migration antes da ser trackeada pelo controle de versão
+- `yarn typeorm migration:revert` executa migração
