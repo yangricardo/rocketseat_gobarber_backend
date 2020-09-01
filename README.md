@@ -47,3 +47,5 @@
 - `yarn typeorm migration:revert` executa migração
 
 > Uma entidade ja possui o construtor criado automaticamente
+
+- `yarn typeorm migration:create -n CreateUsers`
