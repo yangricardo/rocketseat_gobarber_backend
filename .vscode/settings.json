@@ -5,7 +5,7 @@
         {
             "database": "gobarber_db",
             "driver": "PostgreSQL",
-            "name": "gobarbar",
+            "name": "gobarber",
             "password": "gobarber_password",
             "port": 5432,
             "previewLimit": 50,

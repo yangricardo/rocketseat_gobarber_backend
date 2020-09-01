@@ -25,9 +25,9 @@ appointmentsRouter.post('/', async (request, response) => {
 	}
 });
 
-appointmentsRouter.get('/', (request, response) => {
+appointmentsRouter.get('/', async (request, response) => {
 	const appointmentRepository = getCustomRepository(AppointmentRepository);
-	return response.json(appointmentRepository.find());
+	return response.json(await appointmentRepository.find());
 });
 
 export default appointmentsRouter;
