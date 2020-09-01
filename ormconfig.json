@@ -1,3 +1,8 @@
 {
-	"type": "postgres"
+	"type": "postgres",
+	"host": "localhost",
+	"port": "5432",
+	"username": "gobarber_admin",
+	"password": "gobarber_password",
+	"database": "gobarber_db"
 }
