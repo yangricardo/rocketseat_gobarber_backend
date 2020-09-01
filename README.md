@@ -45,3 +45,5 @@
 - `yarn typeorm migration:run` executa migração
   - só pode modificar uma migration antes da ser trackeada pelo controle de versão
 - `yarn typeorm migration:revert` executa migração
+
+> Uma entidade ja possui o construtor criado automaticamente
