@@ -12,12 +12,12 @@ interface Request {
  */
 
 export default class CreateAppointmentService {
-	public async execute({ provider, date }: Request): Appointment {
+	public async execute({ provider, date }: Request): Promise<Appointment> {
 		const appointmentRepository = getCustomRepository(AppointmentRepository);
 
 		const appointmentDate = startOfHour(date);
 
-		const findAppointmentInSameDate = appointmentRepository.findByDate(
+		const findAppointmentInSameDate = await appointmentRepository.findByDate(
 			appointmentDate,
 		);
 

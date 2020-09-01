@@ -5,6 +5,9 @@
 	"username": "gobarber_admin",
 	"password": "gobarber_password",
 	"database": "gobarber_db",
+	"entities": [
+		"./src/models/*.ts"
+	],
 	"migrations": [
 		"./src/database/migrations/*.ts"
 	],
