@@ -1,5 +1,5 @@
 import { uuid } from 'uuidv4';
-
+import { Entity } from 'typeorm';
 interface AppointmentConstructorDTO {
 	provider: string;
 	date: Date;
