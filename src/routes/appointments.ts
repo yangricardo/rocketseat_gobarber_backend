@@ -4,8 +4,9 @@ import { startOfHour, parseISO } from 'date-fns';
 import AppointmentRepository from '../repositories/AppointmentsRepository';
 import CreateAppointmentService from '../services/CreateAppointmentsService';
 import { getCustomRepository } from 'typeorm';
-
+import ensureAuthenticated from '../middlewares/ensureAuthenticated';
 const appointmentsRouter = Router();
+appointmentsRouter.use(ensureAuthenticated);
 
 appointmentsRouter.post('/', async (request, response) => {
 	try {
