@@ -51,3 +51,5 @@
 - `yarn typeorm migration:create -n CreateUsers`
 
 - dbeaver
+
+- `yarn add multer` e `yarn add -D @types/multer`
