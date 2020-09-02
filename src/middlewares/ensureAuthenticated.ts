@@ -16,8 +16,11 @@ export default function ensureAuthenticated(
 	// validação do token jwt
 
 	const authHeader = request.headers.authorization;
+
 	if (!authHeader) throw new Error('JWT Token is Required!');
+
 	const [, token] = authHeader.split(' ');
+
 	try {
 		const decoded = verify(token, authConfig.jwt.secret);
 		const { sub } = decoded as TokenPayload;
