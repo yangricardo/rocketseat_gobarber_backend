@@ -31,6 +31,15 @@
 				"typescript": {}
 			}
 		},
-		"prettier/prettier": "error"
+		"prettier/prettier": "error",
+		"no-underscore-dangle": "off",
+		"class-methods-use-this": "off",
+		"@typescript-eslint/camelcase": "off",
+		"@typescript-eslint/no-unused-vars": [
+			"error",
+			{
+				"argsIgnorePattern": "_"
+			}
+		]
 	}
 }

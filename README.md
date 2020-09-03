@@ -52,4 +52,7 @@
 
 - dbeaver
 
-- `yarn add multer` e `yarn add -D @types/multer`
+- `yarn add multer` e `yarn add -D @types/multer` : manipulação de arquivos
+- `yarn add express-async-errors` : tratativa no express para lidar com requisições async
+
+-
